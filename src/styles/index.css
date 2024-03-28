@@ -1,0 +1,152 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+/* body {
+	margin: 0;
+	font-family: 'Plus Jakarta Sans', sans-serif;
+} */
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
+}
+/* calander start */
+.rbc-today {
+	background-color: transparent !important;
+	color: #66b2b2 !important;
+}
+.rbc-day-slot .rbc-time-slot {
+    border-top: 1px solid #4f4a4a !important;
+} 
+ .rbc-timeslot-group {
+    border-bottom: 1px solid #4f4a4a !important;
+}
+.rbc-time-content > * + * > * {
+    border-left: 1px solid #4f4a4a !important;
+}
+.rbc-month-view {
+    border: 1px solid #4f4a4a !important;
+}
+.rbc-time-content {
+    border-top: none !important;
+} 
+.rbc-time-view {
+	border: 1px solid #272E50 !important;
+}
+.rbc-month-row + .rbc-month-row {
+     border-top: 1px solid #4f4a4a !important;
+}
+/* calander end */
+
+.apexcharts-toolbar {
+	display: none !important;
+}
+.apexcharts-canvas {
+	color: #49a2a2 !important;
+	svg {
+		background-color: transparent !important;
+		color: #49a2a2 !important;
+	}
+}
+.login {
+	min-height: calc(100vh - 110px);
+}
+.cms {
+	min-height: calc(100vh - 224px);
+}
+
+.containercheckbox {
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	font-size: 22px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+/* Hide the browser's default checkbox */
+.containercheckbox input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+/* Create a custom checkbox */
+.checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 18px;
+	width: 18px;
+	background-color: transparent;
+	border: 1px rgb(230, 222, 222) solid;
+	border-radius: 4px;
+}
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+	background-color: transparent;
+}
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+	background-color: #1c37b2;
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+	content: '';
+	position: absolute;
+	display: none;
+}
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+	display: block;
+}
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+	left: 6px;
+	top: 3px;
+	width: 5px;
+	height: 8px;
+	border: solid white;
+	border-width: 0 2px 2px 0;
+	-webkit-transform: rotate(35deg);
+	-ms-transform: rotate(35deg);
+	transform: rotate(35deg);
+}
+
+/* otp code input */
+
+.inputStyle {
+	width: 60px !important;
+	height: 56px;
+	border-radius: 8px;
+	border: 2px solid #a8a9b4;
+	margin-left: 5px;
+	margin-right: 5px;
+	background: transparent !important;
+	font-size: 24px;
+	color: #a8a9b4;
+	font: 800;
+	text-align: center;
+}
+/* otp code input end */
+/* Define scrollbar width and track color */
+::-webkit-scrollbar {
+	width: 5px; /* Adjust as needed */
+	border-radius: 10px !important;
+	height: 5px;
+  }
+  /* Define scrollbar thumb color */
+  ::-webkit-scrollbar-thumb {
+	background-color: #4f46e5;
+	border-radius: 10px !important;
+
+  }
+  /* Define scrollbar track color */
+  ::-webkit-scrollbar-track {
+	background-color: #f1f1f1;
+	border-radius: 10px !important;
+  }
